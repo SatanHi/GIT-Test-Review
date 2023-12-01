@@ -1,0 +1,217 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 2141.9633462210022,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1046.7,
+            "y": 216
+          },
+          "nodeIndex": "Military Strength",
+          "nodeLineageTag": "69d900ed-6b71-404e-b50a-8b2c1c7e988d",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 1042.7,
+            "y": 65
+          },
+          "nodeIndex": "Economics",
+          "nodeLineageTag": "7a91c292-c538-4107-b904-53a6f02b664e",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 1047.871875,
+            "y": 347
+          },
+          "nodeIndex": "Population Density",
+          "nodeLineageTag": "57634702-faad-4623-9b93-481efb83f70c",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 764.40000000000009,
+            "y": 47
+          },
+          "nodeIndex": "GDP by Country 1999-2022",
+          "nodeLineageTag": "215ebbdf-e1e6-4f53-972c-8ab2399c7ca7",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 262.7,
+            "y": 0
+          },
+          "nodeIndex": "Military",
+          "nodeLineageTag": "e42558d3-9d35-43fb-aab9-7537941b3fb0",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 623.84999999999991,
+            "y": 374
+          },
+          "nodeIndex": "Overseas military base",
+          "nodeLineageTag": "4482ad0c-a2d5-4523-9337-67068a52ea93",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 1398.9,
+            "y": 0
+          },
+          "nodeIndex": "Blank",
+          "nodeLineageTag": "c3f0685d-2580-4bdb-808a-94632fc0ff53",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1749.9,
+            "y": 0
+          },
+          "nodeIndex": "Format",
+          "nodeLineageTag": "a809dbc8-3743-4119-94aa-9ba462ac2561",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2125.3,
+            "y": 0
+          },
+          "nodeIndex": "Srength",
+          "nodeLineageTag": "f60af107-4a3d-49cb-83d7-bb99a0eb00e9",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2500.7,
+            "y": 0
+          },
+          "nodeIndex": "Oil",
+          "nodeLineageTag": "b77b8724-4d87-426b-9d85-b827e9c47ba9",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2876.1,
+            "y": 0
+          },
+          "nodeIndex": "Parameter",
+          "nodeLineageTag": "2c52481c-c9b2-4c46-a393-90096bb76f3e",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1409.8000000000002,
+            "y": 134
+          },
+          "nodeIndex": "nuclear_warheads_1945_2020",
+          "nodeLineageTag": "9dd39c6d-3d17-4984-9f4c-3f7d10c67603",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3281.8,
+            "y": 0
+          },
+          "nodeIndex": "TOP-Budget",
+          "nodeLineageTag": "721d530d-7187-4d73-ae81-2ebfc1b99c77",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 405.2937842853417
+          },
+          "nodeIndex": "Budget_Table",
+          "nodeLineageTag": "00df61c1-0f0a-4b31-91a8-b451488b96f0",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3645.6,
+            "y": 0
+          },
+          "nodeIndex": "Sheet1",
+          "nodeLineageTag": "35c6b7d8-5950-4bdc-aaa2-6216c4d23f22",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 79.5531820376998,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}
