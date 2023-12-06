@@ -20175,14 +20175,14 @@
             "lineageTag": "2c6e5031-338c-408f-a0c0-a932263f47ad"
           },
           {
-            "name": "Testing",
-            "expression": "\"Testing\"",
-            "lineageTag": "b9efe35c-bc6c-4d4b-8c26-de34678215ab"
-          },
-          {
             "name": "New",
             "expression": "\"NEW MEASURE\"",
             "lineageTag": "760dc7bf-4c81-4d53-b267-c6adbf1ac80c"
+          },
+          {
+            "name": "ONE",
+            "expression": "\"TESTING\"",
+            "lineageTag": "7571da02-b2ba-46dc-a4cb-bc050a218cbd"
           }
         ],
         "partitions": [
