@@ -1,0 +1,2762 @@
+{
+  "compatibilityLevel": 1550,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.123.742.0 (23.11)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"UNIT_OCCUPANCY_DAILY\",\"PROPERTY_AGE_RECEIVABLES_MONTHLY\",\"LEASE_PROGRESSION_DAILY\",\"TRANSACTION_CHARGES_COLLECTIONS_MONTHLY\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-GB",
+    "cultures": [
+      {
+        "name": "en-GB",
+        "linguisticMetadata": {
+          "content": {
+            "DynamicImprovement": "HighConfidence",
+            "Entities": {
+              "unit_occupancy_daily.month_evnt": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "UNIT_OCCUPANCY_DAILY",
+                    "ConceptualProperty": "Month Evnt"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Month": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "unit_occupancy_daily.quarter_year": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "UNIT_OCCUPANCY_DAILY",
+                    "ConceptualProperty": "Quarter Year"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "QtrYear": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "unit_occupancy_daily.weekday_1": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "UNIT_OCCUPANCY_DAILY",
+                    "ConceptualProperty": "Weekday 1"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Weekday": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              }
+            },
+            "Language": "en-US",
+            "Version": "2.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "UNIT_OCCUPANCY_DAILY",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Client ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fface54f-9256-40da-8423-6b9377db46a6",
+            "sourceColumn": "Client ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Company Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "725b9bb7-c8c5-4e39-a0d0-8e4184676075",
+            "sourceColumn": "Company Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c99ab5b7-5fed-4555-a134-883faa245376",
+            "sourceColumn": "Property ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6b472742-5074-4e4a-b756-f9ab04684986",
+            "sourceColumn": "Property Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property Latitude",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "96da28b8-fb19-424c-92e6-cc7c50c004da",
+            "sourceColumn": "Property Latitude",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property Longitude",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1c4e2628-dbae-4a7f-af01-df3f8d398646",
+            "sourceColumn": "Property Longitude",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property State",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c3b9ea98-eee0-4884-88da-4c6c18bc3b56",
+            "sourceColumn": "Property State",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property City",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "083740af-ccba-4c9c-a963-97f0c62a46ad",
+            "sourceColumn": "Property City",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property Address",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7cbac884-02dc-4210-8033-095e12895b2d",
+            "sourceColumn": "Property Address",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property Zipcode",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e627cf50-5c1f-4f0a-97c2-4eb51f4fcc45",
+            "sourceColumn": "Property Zipcode",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Unit Type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f3efca71-dede-4b89-a5d4-c50c5df87abb",
+            "sourceColumn": "Unit Type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Unit Number",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f3b92ec6-dab4-446b-a251-7cfd9348f323",
+            "sourceColumn": "Unit Number",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Unit Status",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "31cea10d-117f-41a2-8c46-661473782e9f",
+            "sourceColumn": "Unit Status",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Building Unit",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1e7f44d0-a6ff-41ff-aba8-12d5fc4c71a6",
+            "sourceColumn": "Building Unit",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Event Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "309d40e2-5411-467f-bada-48812a90855b",
+            "sourceColumn": "Event Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Model Unit Count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "9df64f21-a360-43b2-9750-5d564b2b74d1",
+            "sourceColumn": "Model Unit Count",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Down Unit Count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "2a209667-b5db-4968-bae2-a4fdbcb8cb16",
+            "sourceColumn": "Down Unit Count",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Rentable Unit Count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "52e157a8-fdfa-4965-9d90-a18aa9ff3004",
+            "sourceColumn": "Rentable Unit Count",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Occupied Unit Count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "f3b5e693-83f9-4b00-a971-1f8929e46388",
+            "sourceColumn": "Occupied Unit Count",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Rentable Vacant Unit Count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "20db4e1d-ac98-4cb0-b47a-e4e8111a57c8",
+            "sourceColumn": "Rentable Vacant Unit Count",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Rentable Leased Unit Count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "b863ea5f-48a4-4d05-8e00-2b26d5419a16",
+            "sourceColumn": "Rentable Leased Unit Count",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Rentable Trend Unit Count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "806c4f52-de4d-464c-aac0-33dc4459b8e2",
+            "sourceColumn": "Rentable Trend Unit Count",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Rentable Exposed Unit Count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "2e828637-11eb-45d4-a15a-27f7f1715f0c",
+            "sourceColumn": "Rentable Exposed Unit Count",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Rentable Trend 30 Count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "c0c87bff-e548-4b0a-b272-d7d4164d993e",
+            "sourceColumn": "Rentable Trend 30 Count",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Rentable Trend 60 Count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "2ef42efc-6fc2-4dd5-9f64-bf26d44da8b2",
+            "sourceColumn": "Rentable Trend 60 Count",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Vacant Unrented Not Ready Count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "dc642b20-595c-4551-8902-c1658267fee2",
+            "sourceColumn": "Vacant Unrented Not Ready Count",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Vacant Unrented Ready Count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "d79e1eb1-bdb1-428b-a36c-b231d2f8e15b",
+            "sourceColumn": "Vacant Unrented Ready Count",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Vacant Rented Not Ready Count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "65807fe5-a688-4212-8b65-011fce1840ac",
+            "sourceColumn": "Vacant Rented Not Ready Count",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Vacant Rented Ready Count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "8f88c1ed-a5b0-4952-a0fa-6df484823744",
+            "sourceColumn": "Vacant Rented Ready Count",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Resident Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9ce81d49-93f1-4e8f-a139-8234683418a5",
+            "sourceColumn": "Resident Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Resident First Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "98d00e06-9950-4928-b18f-5dd8a5403503",
+            "sourceColumn": "Resident First Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Resident Last Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3a1d6258-e140-43dc-b7b9-29d69de9eb51",
+            "sourceColumn": "Resident Last Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Future Resident Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7f970ed1-303d-405b-b095-e02f58ee305a",
+            "sourceColumn": "Future Resident Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Future Resident First Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7ad36b67-874d-4a4c-bedc-1de0ff922dd4",
+            "sourceColumn": "Future Resident First Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Future Resident Last Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "32eb216a-ae13-4642-883e-6682e2bee23e",
+            "sourceColumn": "Future Resident Last Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Prior Resident Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a1e95f4f-c238-4b3a-80d1-abc19db4df4c",
+            "sourceColumn": "Prior Resident Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Prior Resident First Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "952fde0d-0383-42fd-9081-34e7098e556a",
+            "sourceColumn": "Prior Resident First Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Prior Resident Last Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e9efdbad-ec26-43db-a538-06d61f1d7845",
+            "sourceColumn": "Prior Resident Last Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Lease ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7aee4222-02d4-4fe9-84b3-c2495a46dbbb",
+            "sourceColumn": "Lease ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Future Lease ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "462f25f2-0a40-4bb9-a410-fdbf8ddd2e48",
+            "sourceColumn": "Future Lease ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Prior Lease ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e2fd82a6-15df-4797-ae26-f073941890a0",
+            "sourceColumn": "Prior Lease ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Future Move-in Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "9934293b-6d5f-4c45-8aec-d155c3a41615",
+            "sourceColumn": "Future Move-in Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Move-in Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "ea7af308-0b4e-4f3c-848d-6e15450745b8",
+            "sourceColumn": "Move-in Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Prior Move-in Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "8951790c-69e8-4f00-a7f1-bb72eb54d6d2",
+            "sourceColumn": "Prior Move-in Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Move-out Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "45b363f4-12cb-43b5-9a7e-25df0ea8493d",
+            "sourceColumn": "Move-out Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Prior Move-out Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "ee37eb79-d284-4bf5-9260-b789432d8ab7",
+            "sourceColumn": "Prior Move-out Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Days Vacant",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "c2a4f32c-0d1b-4f95-bf61-83f307c88810",
+            "sourceColumn": "Days Vacant",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Notice Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "645afc94-60fc-4e12-a74d-2fea51568662",
+            "sourceColumn": "Notice Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Prior Notice Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "f26f39b4-45b4-4a97-b15a-0baa2ded90cf",
+            "sourceColumn": "Prior Notice Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Leased Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "d47da580-7ead-4566-858b-e7d399b0728a",
+            "sourceColumn": "Leased Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Vacant Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "83e23965-8eb5-41d4-8466-4785200c90ba",
+            "sourceColumn": "Vacant Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Occupied Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "fedc3c3d-b8de-45ce-a4eb-422a1408c0bc",
+            "sourceColumn": "Occupied Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Square Feet",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "0bd00652-f685-4055-8e37-d5a9d35e84a8",
+            "sourceColumn": "Square Feet",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Bedroom Count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "c2c9a607-1730-4357-9f1d-0da16a4e6817",
+            "sourceColumn": "Bedroom Count",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Bathroom Count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "42659876-3aff-4ead-8102-ef12a65ea17d",
+            "sourceColumn": "Bathroom Count",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Make Ready Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "f2b2eefa-eb29-45a6-95a9-1f3fa2f61c8f",
+            "sourceColumn": "Make Ready Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Available On",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "f0469a36-7f39-4204-aab4-a311ec38dbdc",
+            "sourceColumn": "Available On",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Budgeted Rent",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "7e116ab0-f44e-4516-b1de-04cca5e4aebd",
+            "sourceColumn": "Budgeted Rent",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Current MTM",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "a1c7bed4-4a37-4a1c-b138-ff39917e7628",
+            "sourceColumn": "Current MTM",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Vacant Units",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "d97e3070-1294-4d7e-91ea-370de62ea40c",
+            "sourceColumn": "Vacant Units",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Lease Start Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "382001ec-2c4d-4c8d-95eb-955ecc71f847",
+            "sourceColumn": "Lease Start Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Lease End Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "bb5307a3-988d-4732-95bf-d4b69b9d0505",
+            "sourceColumn": "Lease End Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Lease Status",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4d9293ff-0be9-49c2-8b32-be13f103776c",
+            "sourceColumn": "Lease Status",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Floor Plan",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "29d60680-eed6-4a04-b839-9935957d5a4a",
+            "sourceColumn": "Floor Plan",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Effective Rent",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "9f1778e8-5af0-4f1a-b8f0-3c05671fea0a",
+            "sourceColumn": "Effective Rent",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Scheduled Rent",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "440a1ccc-62d8-4cca-8830-7d42611a7fd4",
+            "sourceColumn": "Scheduled Rent",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Scheduled Charges",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "415dd021-f4bc-464e-99e0-85bde93e335e",
+            "sourceColumn": "Scheduled Charges",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Market Rent",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "ef3dd850-b4eb-4ddc-9757-565e70d104a0",
+            "sourceColumn": "Market Rent",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Days On Market",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "cea17276-30ea-4c79-954b-b7d4154f79e4",
+            "sourceColumn": "Days On Market",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Audit Updated On",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "c93ecd1c-8f5e-45f7-b80d-1f6e135785ba",
+            "sourceColumn": "Audit Updated On",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Audit Inserted On",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "9ceaef4a-9fc4-43dc-b44a-4b6f841df994",
+            "sourceColumn": "Audit Inserted On",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Weekday 1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    TRUE(),",
+              "    UNIT_OCCUPANCY_DAILY[Event Date]=TODAY()-1,\"Current\",",
+              "    UNIT_OCCUPANCY_DAILY[Event Date]=TODAY()-8,\"-7\",",
+              "    UNIT_OCCUPANCY_DAILY[Event Date]=TODAY()-15,\"-14\",",
+              "    UNIT_OCCUPANCY_DAILY[Event Date]=TODAY()-22,\"-21\",",
+              "    UNIT_OCCUPANCY_DAILY[Event Date]=TODAY()-29,\"-28\",",
+              "    UNIT_OCCUPANCY_DAILY[Event Date]=TODAY()-31,\"-30\",",
+              "    UNIT_OCCUPANCY_DAILY[Event Date]=TODAY()-61,\"-60\",",
+              "    UNIT_OCCUPANCY_DAILY[Event Date]=TODAY()+6,\"+7\",",
+              "    UNIT_OCCUPANCY_DAILY[Event Date]=TODAY()+13,\"+14\",",
+              "    UNIT_OCCUPANCY_DAILY[Event Date]=TODAY()+20,\"+21\",",
+              "    UNIT_OCCUPANCY_DAILY[Event Date]=TODAY()+27,\"+28\",",
+              "    UNIT_OCCUPANCY_DAILY[Event Date]=TODAY()+31,\"+30\",",
+              "    UNIT_OCCUPANCY_DAILY[Event Date]=TODAY()+61,\"+60\",",
+              "    UNIT_OCCUPANCY_DAILY[Event Date]=TODAY()+91,\"+90\",",
+              "    UNIT_OCCUPANCY_DAILY[Event Date]=TODAY()+121,\"+120\"",
+              "    )"
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "4cda86b3-a1fc-4248-b9c1-6fff805de009",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "YEAR(UNIT_OCCUPANCY_DAILY[Event Date])&\"  Q\"&QUARTER(UNIT_OCCUPANCY_DAILY[Event Date])"
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "acef4278-57e2-4ec2-989d-3e14e2d8b26e",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month Evnt",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "FORMAT(UNIT_OCCUPANCY_DAILY[Event Date],\"MMM\")"
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "bdc2f40b-cc11-400a-88b4-b260cfd9976f",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthYearnum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "FORMAT(",
+              "    UNIT_OCCUPANCY_DAILY[Event Date],",
+              "    \"YYYYMM\"",
+              ")"
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "81055a53-eb7a-4c2f-9924-24ffea40056e",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "6999991a-40fe-4401-8aad-0f8071b423cd",
+        "partitions": [
+          {
+            "name": "UNIT_OCCUPANCY_DAILY",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Snowflake.Databases(\"jsb49008.us-east-1.snowflakecomputing.com\",\"Compute_WH\"),",
+                "    ENTRATA_BI_Database = Source{[Name=\"ENTRATA_BI\",Kind=\"Database\"]}[Data],",
+                "    DASHBOARD_Schema = ENTRATA_BI_Database{[Name=\"DASHBOARD\",Kind=\"Schema\"]}[Data],",
+                "    UNIT_OCCUPANCY_DAILY_View = DASHBOARD_Schema{[Name=\"UNIT_OCCUPANCY_DAILY\",Kind=\"View\"]}[Data]",
+                "in",
+                "    UNIT_OCCUPANCY_DAILY_View"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "MeasureExecutiveSummary",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "d2d94abeca3645c0ade22dccca6c74b4"
+          },
+          {
+            "name": "436ba87b-9c83-4389-a31b-ebd06a36be98",
+            "value": "{\"Expression\":\"\"}"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Column",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "65a78f37-f24b-4d62-a22b-0808cc5bcf72",
+            "sourceColumn": "[Column]",
+            "summarizeBy": "sum",
+            "type": "calculatedTableColumn"
+          }
+        ],
+        "lineageTag": "3178b282-5cf3-455a-bd5f-c448568f2b62",
+        "measures": [
+          {
+            "name": "Occupancy %",
+            "expression": [
+              "",
+              "DIVIDE(",
+              "    SUM(UNIT_OCCUPANCY_DAILY[Occupied Unit Count]),",
+              "    SUM(UNIT_OCCUPANCY_DAILY[Rentable Unit Count]),",
+              "    0",
+              "    )"
+            ],
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "f56caa7e-67ca-4837-b672-d58da31dc15a"
+          },
+          {
+            "name": "Leased %",
+            "expression": [
+              "",
+              "DIVIDE(",
+              "    SUM(UNIT_OCCUPANCY_DAILY[Rentable Leased Unit Count]),",
+              "    SUM(UNIT_OCCUPANCY_DAILY[Rentable Unit Count]),",
+              "    0",
+              "    )"
+            ],
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "82932ffc-9d8f-418e-86eb-99518aafc7ce"
+          },
+          {
+            "name": "Exposed %",
+            "expression": [
+              "",
+              "DIVIDE(",
+              "    SUM(UNIT_OCCUPANCY_DAILY[Rentable Exposed Unit Count]),",
+              "    SUM(UNIT_OCCUPANCY_DAILY[Rentable Unit Count]),",
+              "    0",
+              "    )"
+            ],
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "89e96319-6d09-4726-bc0b-e05027c7af96"
+          },
+          {
+            "name": "Net Performed Move-Ins",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "SUM(LEASE_PROGRESSION_DAILY[Performed Move-in Count])-sum(LEASE_PROGRESSION_DAILY[Performed Move-out Count])"
+            ],
+            "lineageTag": "3b3a9b68-6705-463c-8447-812697706767"
+          },
+          {
+            "name": "Current Month Net Move Ins",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    SUM(LEASE_PROGRESSION_DAILY[Performed Move-in Count]),",
+              "    LEASE_PROGRESSION_DAILY[Event Date]>=TODAY())",
+              "-",
+              "CALCULATE(",
+              "    SUM(LEASE_PROGRESSION_DAILY[Scheduled Move-out Count]),",
+              "    LEASE_PROGRESSION_DAILY[Event Date]>=TODAY())",
+              ""
+            ],
+            "lineageTag": "10dc7c67-9e60-4a8f-9265-b3e59666fb8e"
+          },
+          {
+            "name": "Net Scheduled Move-ins",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "SUM(LEASE_PROGRESSION_DAILY[Scheduled Move-in Count])-SUM(LEASE_PROGRESSION_DAILY[Scheduled Move-out Count])"
+            ],
+            "lineageTag": "93d4225e-9270-4eac-af92-ab0b0bde1d44"
+          },
+          {
+            "name": "Trend %",
+            "expression": [
+              "",
+              "DIVIDE(",
+              "    SUM(UNIT_OCCUPANCY_DAILY[Rentable Trend Unit Count]),",
+              "    SUM(UNIT_OCCUPANCY_DAILY[Rentable Unit Count]),",
+              "    0",
+              "    )"
+            ],
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "f54c80ee-6a27-4975-a872-2219e58f629f"
+          },
+          {
+            "name": "60th Day",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    [Occupancy %],",
+              "    UNIT_OCCUPANCY_DAILY[Event Date]=TODAY()-60",
+              ")"
+            ],
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "d3f12397-4687-4463-b3f2-3c794ca38e81"
+          },
+          {
+            "name": "30th Day",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    [Occupancy %],",
+              "    UNIT_OCCUPANCY_DAILY[Event Date]=TODAY()-30",
+              ")"
+            ],
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "e4170bb0-3dfc-483a-adf0-a617bc3077ce"
+          },
+          {
+            "name": "Weekday",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    TRUE(),",
+              "    SELECTEDVALUE(LEASE_PROGRESSION_DAILY[Event Date])=TODAY()-1,\"Current\",",
+              "    SELECTEDVALUE(LEASE_PROGRESSION_DAILY[Event Date])=TODAY()-8,\"-7\",",
+              "    SELECTEDVALUE(LEASE_PROGRESSION_DAILY[Event Date])=TODAY()-15,\"-14\",",
+              "    SELECTEDVALUE(LEASE_PROGRESSION_DAILY[Event Date])=TODAY()-22,\"-21\",",
+              "    SELECTEDVALUE(LEASE_PROGRESSION_DAILY[Event Date])=TODAY()-29,\"-28\",",
+              "    SELECTEDVALUE(LEASE_PROGRESSION_DAILY[Event Date])=TODAY()-31,\"-30\",",
+              "    SELECTEDVALUE(LEASE_PROGRESSION_DAILY[Event Date])=TODAY()-61,\"-60\",",
+              "    SELECTEDVALUE(LEASE_PROGRESSION_DAILY[Event Date])=TODAY()+6,\"+7\",",
+              "    SELECTEDVALUE(LEASE_PROGRESSION_DAILY[Event Date])=TODAY()+13,\"+14\",",
+              "    SELECTEDVALUE(LEASE_PROGRESSION_DAILY[Event Date])=TODAY()+20,\"+21\",",
+              "    SELECTEDVALUE(LEASE_PROGRESSION_DAILY[Event Date])=TODAY()+27,\"+28\",",
+              "    SELECTEDVALUE(LEASE_PROGRESSION_DAILY[Event Date])=TODAY()+31,\"+30\",",
+              "    SELECTEDVALUE(LEASE_PROGRESSION_DAILY[Event Date])=TODAY()+61,\"+60\",",
+              "    SELECTEDVALUE(LEASE_PROGRESSION_DAILY[Event Date])=TODAY()+91,\"+90\",",
+              "    SELECTEDVALUE(LEASE_PROGRESSION_DAILY[Event Date])=TODAY()+121,\"+120\"",
+              "    )"
+            ],
+            "lineageTag": "b1675ba6-1ff3-4fac-8cec-6cc2c02ce02d"
+          },
+          {
+            "name": "WeekdayColor",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    SELECTEDVALUE(UNIT_OCCUPANCY_DAILY[Weekday 1]),",
+              "    \"Current\",\"#9D6E9C\",",
+              "    \"-7\",\"#C6ABC6\",\"-14\",\"#C6ABC6\",\"-21\",\"#C6ABC6\",\"-28\",\"#C6ABC6\",\"-30\",\"#C6ABC6\", \"-60\",\"#C6ABC6\",",
+              "    \"+7\",\"#E0E0E0\",\"+14\",\"#E0E0E0\",\"+21\",\"#E0E0E0\",\"+28\",\"#E0E0E0\",\"+30\",\"#E0E0E0\",\"+60\",\"#E0E0E0\",\"+120\",\"#E0E0E0\",\"+90\",\"#E0E0E0\")",
+              ""
+            ],
+            "lineageTag": "bb25125a-390a-4647-b7a2-ff0da77d46d8"
+          },
+          {
+            "name": "Avg Occupancy",
+            "expression": [
+              "",
+              "DIVIDE(",
+              "    AVERAGE(UNIT_OCCUPANCY_DAILY[Occupied Unit Count]),",
+              "    AVERAGE(UNIT_OCCUPANCY_DAILY[Rentable Unit Count]),",
+              "    0",
+              ")"
+            ],
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "33ea18d0-9503-4ae2-b74a-71e299020f45"
+          },
+          {
+            "name": "% Collected",
+            "expression": [
+              "",
+              "DIVIDE(",
+              "    SUM(TRANSACTION_CHARGES_COLLECTIONS_MONTHLY[Current Receipts])+SUM(TRANSACTION_CHARGES_COLLECTIONS_MONTHLY[Prior Receipts]),",
+              "    SUM(TRANSACTION_CHARGES_COLLECTIONS_MONTHLY[Current Charges]),",
+              "    0",
+              ")"
+            ],
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "cb683e03-1bb4-4ee3-b8f7-ee21996ab25e"
+          },
+          {
+            "name": "Uncollected",
+            "expression": [
+              "",
+              "SUMX(",
+              "    TRANSACTION_CHARGES_COLLECTIONS_MONTHLY,",
+              "    TRANSACTION_CHARGES_COLLECTIONS_MONTHLY[Current Charges]-((TRANSACTION_CHARGES_COLLECTIONS_MONTHLY[Current Receipts]+TRANSACTION_CHARGES_COLLECTIONS_MONTHLY[Prior Receipts])+TRANSACTION_CHARGES_COLLECTIONS_MONTHLY[Credit Concessions]))"
+            ],
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "lineageTag": "e65741aa-27e5-4ba9-82ff-aa4cbc5df4bf"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "MeasureExecutiveSummary",
+            "mode": "import",
+            "source": {
+              "expression": "Row(\"Column\", BLANK())",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "PROPERTY_AGE_RECEIVABLES_MONTHLY",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Client ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "78f6dfc1-fc7d-495f-998b-c675876c8167",
+            "sourceColumn": "Client ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Company Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a5043388-e765-4cfc-9019-9759bda66ec1",
+            "sourceColumn": "Company Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "420e80e6-2d3c-4462-a465-d17e445789f4",
+            "sourceColumn": "Property ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d66d564d-8645-43b8-8d9e-7e3385bb1d46",
+            "sourceColumn": "Property Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property Latitude",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8b61d677-fd55-4c64-9279-b777abc7868c",
+            "sourceColumn": "Property Latitude",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property Longitude",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2f4b640d-1a47-477e-8b18-4f76c5011c45",
+            "sourceColumn": "Property Longitude",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property State",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f27c7330-231b-4d80-964c-0b018bfc4e2e",
+            "sourceColumn": "Property State",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property City",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "15fb74d3-5b15-4dbd-88e4-b0866b8178b0",
+            "sourceColumn": "Property City",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property Address",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d8fe72b9-d983-4749-878a-9c71128e4efb",
+            "sourceColumn": "Property Address",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property Zipcode",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9911864e-4127-4216-aa5d-d369d2ffe3aa",
+            "sourceColumn": "Property Zipcode",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "57a14900-5f18-4896-bd46-eaade0c0a876",
+            "sourceColumn": "Month",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "AR Code",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "51c9a4fd-4030-4222-878e-a5a4ef2d0a91",
+            "sourceColumn": "AR Code",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "AR Code Type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ffcb5536-5f6d-4bb9-ae84-4803257ab611",
+            "sourceColumn": "AR Code Type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Lease ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2aed45dc-ac7c-4d54-89a5-c1a09db8fde4",
+            "sourceColumn": "Lease ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Resident Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "815eeaf3-4aad-4c10-b318-2b12812e6b85",
+            "sourceColumn": "Resident Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Resident First Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bb48980d-a97e-419f-98ad-d058491228a8",
+            "sourceColumn": "Resident First Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Resident Last Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2c689a5f-cc63-4665-bf81-63eb60dfa8f8",
+            "sourceColumn": "Resident Last Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Lease Status",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "61438669-f234-4696-ac78-732552d23b2e",
+            "sourceColumn": "Lease Status",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Unpaid",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "lineageTag": "7d02fc73-4659-47cd-a55d-cf2a286339ec",
+            "sourceColumn": "Unpaid",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Aged Receivables 0 to 30",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "717ec7a0-2026-4450-a516-eeb0e9c6ca0f",
+            "sourceColumn": "Aged Receivables 0 to 30",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Aged Receivables 31 to 60",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "06d4dcc5-e784-48b5-8440-e79657cef61b",
+            "sourceColumn": "Aged Receivables 31 to 60",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Aged Receivables 61 to 90",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "5b8a4fd7-fee3-49f6-a37f-b24cbc028a61",
+            "sourceColumn": "Aged Receivables 61 to 90",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Aged Receivables 90+",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "a77b3179-de54-4e23-951d-419635274ec1",
+            "sourceColumn": "Aged Receivables 90+",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Audit Updated On",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "a35087a6-f60b-4a60-b432-94cb922e26bd",
+            "sourceColumn": "Audit Updated On",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Audit Inserted On",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "7bb89ec2-c9e4-4e92-82f7-ca13052cc1ad",
+            "sourceColumn": "Audit Inserted On",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "668ee836-9322-498f-b1c9-000ebb12adf6",
+        "partitions": [
+          {
+            "name": "PROPERTY_AGE_RECEIVABLES_MONTHLY",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Snowflake.Databases(\"jsb49008.us-east-1.snowflakecomputing.com\",\"COMPUTE_WH\"),",
+                "    ENTRATA_BI_Database = Source{[Name=\"ENTRATA_BI\",Kind=\"Database\"]}[Data],",
+                "    DASHBOARD_Schema = ENTRATA_BI_Database{[Name=\"DASHBOARD\",Kind=\"Schema\"]}[Data],",
+                "    PROPERTY_AGE_RECEIVABLES_MONTHLY_View = DASHBOARD_Schema{[Name=\"PROPERTY_AGE_RECEIVABLES_MONTHLY\",Kind=\"View\"]}[Data]",
+                "in",
+                "    PROPERTY_AGE_RECEIVABLES_MONTHLY_View"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LEASE_PROGRESSION_DAILY",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Client ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ecd4eb64-29b5-4889-9c37-e78d36fd04f7",
+            "sourceColumn": "Client ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Company Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9117fa04-81d7-4016-bd21-b6d39c249da9",
+            "sourceColumn": "Company Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "27dc59e0-fdfb-488b-a6a9-655882a8923e",
+            "sourceColumn": "Property ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "80d601d7-a216-4d0b-bba2-5bfe75611826",
+            "sourceColumn": "Property Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property Latitude",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "18b02985-9073-4996-8e55-8bcd024dedbe",
+            "sourceColumn": "Property Latitude",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property Longitude",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cdba58d7-42a3-4099-acc1-be5d78ea64d4",
+            "sourceColumn": "Property Longitude",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property State",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "90b576af-5584-434f-b558-da2da369d3ae",
+            "sourceColumn": "Property State",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property City",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ac0a3171-906b-4e35-a308-7f169996d952",
+            "sourceColumn": "Property City",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property Address",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "90988823-538b-4ecf-ba9e-5ccac15e0801",
+            "sourceColumn": "Property Address",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property Zipcode",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7c1b8710-04f2-436b-9d4c-b2b1b0fd13f6",
+            "sourceColumn": "Property Zipcode",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Lease ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e3b6817e-1e2f-4e9b-9a1a-2611570a9bcd",
+            "sourceColumn": "Lease ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Month Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "92c6d229-0bba-46cd-af13-1cc03fed92ab",
+            "sourceColumn": "Month Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Event Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "554aa485-6c33-4474-a669-174f09fd6d94",
+            "sourceColumn": "Event Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Lease Start Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "42cdcca6-71c8-4b92-a922-44130cc56e3a",
+            "sourceColumn": "Lease Start Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Lease End Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "9323f379-5446-4519-b43a-0303e017be9f",
+            "sourceColumn": "Lease End Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Move-in Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "9066bc01-3081-44b4-91c2-c1aa1c1c2516",
+            "sourceColumn": "Move-in Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Move-out Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "0a07a563-66d8-40d4-8e5c-545380d5b66f",
+            "sourceColumn": "Move-out Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Building Unit",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5113dcff-5d6c-4931-b3e0-2a8951064d0d",
+            "sourceColumn": "Building Unit",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Resident Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5e82b1b1-ebfa-4d2f-ab7b-9e7c54b3791f",
+            "sourceColumn": "Resident Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Resident First Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bf79b8bb-04a6-46c4-80cb-86af23dffd54",
+            "sourceColumn": "Resident First Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Resident Last Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "146041df-3bf7-468d-a446-c90fbf0c4104",
+            "sourceColumn": "Resident Last Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Lease Status",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b28898ff-b849-4ff1-8dd2-bf957ddc1063",
+            "sourceColumn": "Lease Status",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Scheduled Move-in Count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "df4ab23c-6a85-4994-9b78-1405318908af",
+            "sourceColumn": "Scheduled Move-in Count",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Performed Move-in Count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "8717c6e0-316f-4fa2-aa9f-780deb4db542",
+            "sourceColumn": "Performed Move-in Count",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Scheduled Move-out Count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "fc5fca14-822b-443a-9211-4c8ae5882ebd",
+            "sourceColumn": "Scheduled Move-out Count",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Performed Move-out Count",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "1db26bb8-d5dd-4c31-b5ea-0377e1d2bfce",
+            "sourceColumn": "Performed Move-out Count",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Audit Updated On",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "0dbbeb98-78de-4b35-9070-e17e10c89e20",
+            "sourceColumn": "Audit Updated On",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Audit Inserted On",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "952b5774-e325-4b56-802f-6f8eb7e5ef45",
+            "sourceColumn": "Audit Inserted On",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "5b5d4099-d053-4791-9adb-a1e7ce14184a",
+        "measures": [
+          {
+            "name": "Trail",
+            "expression": "\"Trail\"",
+            "lineageTag": "10151eb1-dbdb-4e8f-bfa3-dd917525f2ba"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "LEASE_PROGRESSION_DAILY",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Snowflake.Databases(\"jsb49008.us-east-1.snowflakecomputing.com\",\"COMPUTE_WH\"),",
+                "    ENTRATA_BI_Database = Source{[Name=\"ENTRATA_BI\",Kind=\"Database\"]}[Data],",
+                "    DASHBOARD_Schema = ENTRATA_BI_Database{[Name=\"DASHBOARD\",Kind=\"Schema\"]}[Data],",
+                "    LEASE_PROGRESSION_DAILY_View = DASHBOARD_Schema{[Name=\"LEASE_PROGRESSION_DAILY\",Kind=\"View\"]}[Data]",
+                "in",
+                "    LEASE_PROGRESSION_DAILY_View"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "TRANSACTION_CHARGES_COLLECTIONS_MONTHLY",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Exception"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Client ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "975b7fa4-f00e-4b81-9470-f21dab178fb8",
+            "sourceColumn": "Client ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Company Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cc66555e-82da-4fd2-8c9f-93037a1bd8cb",
+            "sourceColumn": "Company Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7fec6650-17d6-4375-904b-1843049c552c",
+            "sourceColumn": "Property ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a780b13b-ac78-4dd4-9f22-e3fdb4576c77",
+            "sourceColumn": "Property Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property Latitude",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "76526712-b33c-4e0f-9e2f-88fec691ed20",
+            "sourceColumn": "Property Latitude",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property Longitude",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1c7c1163-90d5-4ec1-8f84-92ba0d0a78cf",
+            "sourceColumn": "Property Longitude",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property State",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a90bbab0-c263-4b91-8ce9-9d623f4439c1",
+            "sourceColumn": "Property State",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property City",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "483f5402-958e-47c3-8a42-d3a4554e0926",
+            "sourceColumn": "Property City",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property Address",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f44e58d7-3972-4cf3-9a00-e7ce8c511c83",
+            "sourceColumn": "Property Address",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Property Zipcode",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "46f75053-d122-4f77-bfdb-fd837f78a3b1",
+            "sourceColumn": "Property Zipcode",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Transaction ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a60e6ee7-b908-4ee1-a431-8013e42f96b0",
+            "sourceColumn": "Transaction ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Lease ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4f7821a7-45e3-4914-bde7-2c91ea947724",
+            "sourceColumn": "Lease ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Resident Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "998607b6-83ee-428c-989a-ccfc4281a0dd",
+            "sourceColumn": "Resident Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Resident First Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "08088722-dcec-4909-8ca0-4e1eeac94a3e",
+            "sourceColumn": "Resident First Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Resident Last Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "175a2033-29c7-4072-a59e-d510d9624696",
+            "sourceColumn": "Resident Last Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Post Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "85d4e471-f2ad-4288-8a87-e68d652cc2cf",
+            "sourceColumn": "Post Month",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "AR Code",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cbb618e1-3158-4054-b55d-c65799a28b2f",
+            "sourceColumn": "AR Code",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "AR Code Type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8dcf15a3-5365-4122-ac66-5c4311755aeb",
+            "sourceColumn": "AR Code Type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Current Charges",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "ca06b1bf-b54e-44b9-b868-7ad3e856f5c2",
+            "sourceColumn": "Current Charges",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Current Receipts",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "cfb5e8fc-aa3a-4fa8-a83a-e006f41afee6",
+            "sourceColumn": "Current Receipts",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Prior Receipts",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "a95d94c7-080c-4da4-af2c-e7e01eadb187",
+            "sourceColumn": "Prior Receipts",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Credit Concessions",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "77344aa4-6bb5-4fc7-9b61-884198f173ee",
+            "sourceColumn": "Credit Concessions",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Audit Updated On",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "339e1158-f72b-4492-9beb-343ea177c7c8",
+            "sourceColumn": "Audit Updated On",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Audit Inserted On",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "6c7b4556-e821-4009-9038-0fd6835cf817",
+            "sourceColumn": "Audit Inserted On",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "83b5f134-7602-4c66-9871-b7ccf67f7f9e",
+        "partitions": [
+          {
+            "name": "TRANSACTION_CHARGES_COLLECTIONS_MONTHLY",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Snowflake.Databases(\"jsb49008.us-east-1.snowflakecomputing.com\",\"COMPUTE_WH\"),",
+                "    ENTRATA_BI_Database = Source{[Name=\"ENTRATA_BI\",Kind=\"Database\"]}[Data],",
+                "    DASHBOARD_Schema = ENTRATA_BI_Database{[Name=\"DASHBOARD\",Kind=\"Schema\"]}[Data],",
+                "    TRANSACTION_CHARGES_COLLECTIONS_MONTHLY_View = DASHBOARD_Schema{[Name=\"TRANSACTION_CHARGES_COLLECTIONS_MONTHLY\",Kind=\"View\"]}[Data]",
+                "in",
+                "    TRANSACTION_CHARGES_COLLECTIONS_MONTHLY_View"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
