@@ -20168,7 +20168,13 @@
           },
           {
             "name": "New",
-            "expression": "\"NEW MEASURE\"",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "\"NEW MEASURE\"+\"NEW\"",
             "lineageTag": "760dc7bf-4c81-4d53-b267-c6adbf1ac80c"
           },
           {
