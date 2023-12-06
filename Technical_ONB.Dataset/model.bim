@@ -20167,17 +20167,6 @@
             "lineageTag": "deefcf5c-526b-4a21-b49d-f1b28384c424"
           },
           {
-            "name": "New",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "expression": "\"NEW MEASURE\"+\"NEW\"",
-            "lineageTag": "760dc7bf-4c81-4d53-b267-c6adbf1ac80c"
-          },
-          {
             "name": "ONE",
             "expression": "\"TESTING\"",
             "lineageTag": "7571da02-b2ba-46dc-a4cb-bc050a218cbd"
