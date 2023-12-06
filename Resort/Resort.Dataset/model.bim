@@ -1,0 +1,904 @@
+{
+  "compatibilityLevel": 1550,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"resorts\",\"Measure\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.123.742.0 (23.11)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "DynamicImprovement": "HighConfidence",
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "resorts",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8d15715e-9af2-4fb5-9afb-25f4676040ca",
+            "sourceColumn": "ID",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "Resort",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "dbe74180-762d-47c7-9fa0-5ea0bef4111a",
+            "sourceColumn": "Resort",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Latitude",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "d2afc614-6571-4c53-9c34-43cb22da2843",
+            "sourceColumn": "Latitude",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Longitude",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "1e74417d-eafe-4931-a618-dbcf6a75a9da",
+            "sourceColumn": "Longitude",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Country",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2620910e-4fa0-4e80-a835-522e0a198eca",
+            "sourceColumn": "Country",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Continent",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "30457a6a-4527-4a36-bbe2-f8f1ce02e30d",
+            "sourceColumn": "Continent",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Price",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "\\$#,0.00;(\\$#,0.00);\\$#,0.00",
+            "lineageTag": "de1162c4-039e-4873-b58a-5694ebbb27e1",
+            "sourceColumn": "Price",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Season",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "__PBI_SemanticLinks",
+                "value": "[{\"LinkTarget\":{\"TableName\":\"resorts\",\"TableItemName\":\"Season (groups)\",\"ObjectType\":4},\"LinkType\":\"UsedInGroup\"}]"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "de60c7c4-ad93-4580-89b1-399c8d70e1c0",
+            "sourceColumn": "Season",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Highest point",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d9aa4032-cb4a-458e-852b-a4a4b9c2ff28",
+            "sourceColumn": "Highest point",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Lowest point",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "3fa39735-ded7-4b2b-9e56-548d6d4269de",
+            "sourceColumn": "Lowest point",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Beginner slopes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "00b73aff-ffd0-4492-bc6f-bbfaae99ed92",
+            "sourceColumn": "Beginner slopes",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Intermediate slopes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4cd761e4-7413-464f-b561-d3f689257f19",
+            "sourceColumn": "Intermediate slopes",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Difficult slopes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "fdae437f-df5e-492e-8767-2f31664e2620",
+            "sourceColumn": "Difficult slopes",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Total slopes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ca14e8d8-e4ed-4ab9-bdfb-af1a39d653fa",
+            "sourceColumn": "Total slopes",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Longest run",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "af80c2f7-ba3d-4afe-96fc-4d0d2265ea12",
+            "sourceColumn": "Longest run",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Snow cannons",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5f2eb650-9d96-4eda-8862-518e13de223d",
+            "sourceColumn": "Snow cannons",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Surface lifts",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f5d24834-09bd-4300-b665-a87ff7c85890",
+            "sourceColumn": "Surface lifts",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Chair lifts",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ba01acd2-cd55-4788-9857-8e62b5613488",
+            "sourceColumn": "Chair lifts",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gondola lifts",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "51c36256-e0f5-4edc-b302-b84bea28a66f",
+            "sourceColumn": "Gondola lifts",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Total lifts",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "bb2dfafb-a970-4451-8799-7ff9be1e3b13",
+            "sourceColumn": "Total lifts",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Lift capacity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "05553ed1-252d-40e2-b24a-5d4eb3f6bd60",
+            "sourceColumn": "Lift capacity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Child friendly",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7d78d8e8-cbba-47ff-bcc8-8ae44ff35536",
+            "sourceColumn": "Child friendly",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Snowparks",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bc48e39a-0eab-4060-bca1-403f382f0f55",
+            "sourceColumn": "Snowparks",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Nightskiing",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e2451d1c-261e-4f51-90c1-dd2ea2004097",
+            "sourceColumn": "Nightskiing",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Summer skiing",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "24377c69-3c74-4e1f-8414-021c572e3aac",
+            "sourceColumn": "Summer skiing",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Class",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2f0f504c-0c80-46cf-a2e6-0dc55cca6cfe",
+            "sourceColumn": "Class",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Season (groups)",
+            "annotations": [
+              {
+                "name": "GroupingDesignState",
+                "value": "{\"Version\":0,\"Sources\":[{\"Name\":\"r\",\"Entity\":\"resorts\"}],\"GroupedColumns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Season\"}}],\"GroupItems\":[{\"DisplayName\":\"(Blank)\",\"BlankDefaultPlaceholder\":true},{\"DisplayName\":\"April & March & May & May - October & May - September\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Season\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'April'\"}}],[{\"Literal\":{\"Value\":\"'March'\"}}],[{\"Literal\":{\"Value\":\"'May'\"}}],[{\"Literal\":{\"Value\":\"'May - October'\"}}],[{\"Literal\":{\"Value\":\"'May - September'\"}}]]}}},{\"DisplayName\":\"December & December - April & ...\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Season\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'December'\"}}],[{\"Literal\":{\"Value\":\"'December - April'\"}}],[{\"Literal\":{\"Value\":\"'December - April, June - August, October - November'\"}}],[{\"Literal\":{\"Value\":\"'December - March'\"}}],[{\"Literal\":{\"Value\":\"'December - May'\"}}]]}}},{\"DisplayName\":\"July & July - April & July - October & July - September\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Season\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'July'\"}}],[{\"Literal\":{\"Value\":\"'July - April'\"}}],[{\"Literal\":{\"Value\":\"'July - October'\"}}],[{\"Literal\":{\"Value\":\"'July - September'\"}}]]}}},{\"DisplayName\":\"June - May & June - October & June - September\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Season\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'June - May'\"}}],[{\"Literal\":{\"Value\":\"'June - October'\"}}],[{\"Literal\":{\"Value\":\"'June - September'\"}}]]}}},{\"DisplayName\":\"November - April & November - June & November - March & ...\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Season\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'November - April'\"}}],[{\"Literal\":{\"Value\":\"'November - June'\"}}],[{\"Literal\":{\"Value\":\"'November - March'\"}}],[{\"Literal\":{\"Value\":\"'November - May'\"}}],[{\"Literal\":{\"Value\":\"'November - May, June - August'\"}}]]}}},{\"DisplayName\":\"October - April & October - June & October - May & ...\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Season\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'October - April'\"}}],[{\"Literal\":{\"Value\":\"'October - June'\"}}],[{\"Literal\":{\"Value\":\"'October - May'\"}}],[{\"Literal\":{\"Value\":\"'October - November, December - May, June - October'\"}}]]}}},{\"DisplayName\":\"September - April & September - June & September - May\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Season\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'September - April'\"}}],[{\"Literal\":{\"Value\":\"'September - June'\"}}],[{\"Literal\":{\"Value\":\"'September - May'\"}}]]}}},{\"DisplayName\":\"Unknown\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Season\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Unknown'\"}}]]}}},{\"DisplayName\":\"Year-round\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Season\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Year-round'\"}}]]}}}]}"
+              },
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "SWITCH(",
+              "\tTRUE,",
+              "\tISBLANK('resorts'[Season]),",
+              "\t\"(Blank)\",",
+              "\t'resorts'[Season] IN {\"April\",",
+              "\t\t\"March\",",
+              "\t\t\"May\",",
+              "\t\t\"May - October\",",
+              "\t\t\"May - September\"},",
+              "\t\"April & March & May & May - October & May - September\",",
+              "\t'resorts'[Season] IN {\"December\",",
+              "\t\t\"December - April\",",
+              "\t\t\"December - April, June - August, October - November\",",
+              "\t\t\"December - March\",",
+              "\t\t\"December - May\"},",
+              "\t\"December & December - April & ...\",",
+              "\t'resorts'[Season] IN {\"July\",",
+              "\t\t\"July - April\",",
+              "\t\t\"July - October\",",
+              "\t\t\"July - September\"},",
+              "\t\"July & July - April & July - October & July - September\",",
+              "\t'resorts'[Season] IN {\"June - May\",",
+              "\t\t\"June - October\",",
+              "\t\t\"June - September\"},",
+              "\t\"June - May & June - October & June - September\",",
+              "\t'resorts'[Season] IN {\"November - April\",",
+              "\t\t\"November - June\",",
+              "\t\t\"November - March\",",
+              "\t\t\"November - May\",",
+              "\t\t\"November - May, June - August\"},",
+              "\t\"November - April & November - June & November - March & ...\",",
+              "\t'resorts'[Season] IN {\"October - April\",",
+              "\t\t\"October - June\",",
+              "\t\t\"October - May\",",
+              "\t\t\"October - November, December - May, June - October\"},",
+              "\t\"October - April & October - June & October - May & ...\",",
+              "\t'resorts'[Season] IN {\"September - April\",",
+              "\t\t\"September - June\",",
+              "\t\t\"September - May\"},",
+              "\t\"September - April & September - June & September - May\",",
+              "\t'resorts'[Season] IN {\"Unknown\"},",
+              "\t\"Unknown\",",
+              "\t'resorts'[Season] IN {\"Year-round\"},",
+              "\t\"Year-round\",",
+              "\t'resorts'[Season]",
+              ")"
+            ],
+            "extendedProperties": [
+              {
+                "name": "GroupingMetadata",
+                "type": "json",
+                "value": {
+                  "groupedColumns": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "resorts"
+                          }
+                        },
+                        "Property": "Season"
+                      }
+                    }
+                  ],
+                  "version": 0
+                }
+              }
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "26b2e1fc-1c93-40c5-bfb3-ec1b744b136f",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Seasons",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "SWITCH(",
+              "    TRUE(),",
+              "     resorts[Season (groups)] = \"April & March & May & May - October & May - September\",\"April to September\",",
+              "     resorts[Season (groups)]= \"July & July - April & July - October & July - September\",\"July to September\",",
+              "     resorts[Season (groups)] = \"June - May & June - October & June - September\",\"June to September\",",
+              "     resorts[Season (groups)] = \"September - April & September - June & September - May\",\"September to May\",",
+              "     resorts[Season (groups)] = \"December & December - April & December - April, June - August, October - November & December - March & December - May\",\"December - May\",",
+              "     resorts[Season (groups)] = \"Unknown\",\"Unkonwn\",",
+              "     resorts[Season (groups)] = \"Year-round\",\"Year-round\")"
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "784a40cb-47da-4dd3-ac17-6db1a80988e7",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Height Difference",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataType": "int64",
+            "expression": "resorts[Highest point] - resorts[Lowest point]",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "lineageTag": "299b7328-4770-4815-9ff4-ed4979239cbd",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "9cac5c8f-0714-48bf-94ba-1f4a85dcd374",
+        "partitions": [
+          {
+            "name": "resorts-f11ec3e8-762c-4a6f-a69b-5aaae7acb450",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"C:\\Users\\ACER\\Downloads\\Free Data Sets\\Ski+Resorts\\resorts.csv\"),[Delimiter=\",\", Columns=25, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"ID\", Int64.Type}, {\"Resort\", type text}, {\"Latitude\", type number}, {\"Longitude\", type number}, {\"Country\", type text}, {\"Continent\", type text}, {\"Price\", Int64.Type}, {\"Season\", type text}, {\"Highest point\", Int64.Type}, {\"Lowest point\", Int64.Type}, {\"Beginner slopes\", Int64.Type}, {\"Intermediate slopes\", Int64.Type}, {\"Difficult slopes\", Int64.Type}, {\"Total slopes\", Int64.Type}, {\"Longest run\", Int64.Type}, {\"Snow cannons\", Int64.Type}, {\"Surface lifts\", Int64.Type}, {\"Chair lifts\", Int64.Type}, {\"Gondola lifts\", Int64.Type}, {\"Total lifts\", Int64.Type}, {\"Lift capacity\", Int64.Type}, {\"Child friendly\", type text}, {\"Snowparks\", type text}, {\"Nightskiing\", type text}, {\"Summer skiing\", type text}}),",
+                "    #\"Added Conditional Column\" = Table.AddColumn(#\"Changed Type\", \"Class\", each if [Price] < 70 then \"Economy\" else \"Prime\"),",
+                "    #\"Replaced Value\" = Table.ReplaceValue(#\"Added Conditional Column\",\"Unknown\",\"Year-round\",Replacer.ReplaceText,{\"Season\"})",
+                "in",
+                "    #\"Replaced Value\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_933cf430-41fa-4424-8a9c-7f15cd3bd9f0",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "bf8f5d30-9034-404f-8709-596f35c6af7f",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "79420004-ff45-4740-ae2e-c161b587a21f",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "3be279ac-b238-4625-8717-e097d08a6470",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "6683238b-5224-431a-a35a-172cbf2f5222",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "280b52df-27b7-4374-9a28-6e8404de09f6",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "2b886fa9-f588-4db0-ad9c-ab63d1a09884",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "6f74861a-9514-4299-88a4-9fc5c8ea8da4",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "25da7dee-b3a7-4ef9-aa69-9f3b4bd41497",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "c67ba4dd-8b02-4546-b10e-ed85038afc6e",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "d6345705-875a-4d7b-ab73-88ee9f18d368",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "c9a3a113-58fc-4894-b767-8fab789ec2a1",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "d610b479-cb3b-4b5a-a5bd-4efa9fd404c9"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "75c22609-147c-4131-bae4-b99162e3fe2a",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_933cf430-41fa-4424-8a9c-7f15cd3bd9f0-6489aa8c-27ee-408d-b74e-2cfe97a88822",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Measure",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "lineageTag": "91d02849-3bef-4e66-83ac-beda0e985c13",
+        "measures": [
+          {
+            "name": "Resort Altitude",
+            "expression": [
+              "",
+              "SUM(resorts[Highest point]) - SUM(resorts[Lowest point])"
+            ],
+            "formatString": "0",
+            "lineageTag": "169b6981-7ec3-4d5f-9f0d-66a8873a3d47"
+          },
+          {
+            "name": "Total slope Difficulty",
+            "expression": [
+              "",
+              "SUM(resorts[Beginner slopes])+",
+              "SUM(resorts[Intermediate slopes])+",
+              "SUM(resorts[Difficult slopes])"
+            ],
+            "formatString": "0",
+            "lineageTag": "47f1d262-e4df-4b42-b10d-87391b6c8473"
+          },
+          {
+            "name": "Lift Ratio",
+            "expression": [
+              "",
+              "DIVIDE(",
+              "    SUM(resorts[Total lifts]),",
+              "    SUM(resorts[Total slopes])",
+              ")"
+            ],
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "3b1e51d9-f600-425e-834c-ec0308d7fbf2"
+          },
+          {
+            "name": "Lift Capacity per Hour",
+            "expression": [
+              "",
+              "SUMX(resorts,resorts[Lift capacity] * resorts[Total lifts])"
+            ],
+            "formatString": "0",
+            "lineageTag": "45b7d224-bebc-4bf6-979c-78a0f3b16c06"
+          },
+          {
+            "name": "Snowpark Availability Ratio",
+            "expression": [
+              "",
+              "DIVIDE(",
+              "    CALCULATE(",
+              "        COUNTROWS(resorts),",
+              "        resorts[Snowparks] = \"Yes\"),",
+              "        COUNTROWS(resorts)",
+              ")"
+            ],
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "de6be8c5-4451-4954-8ebc-1350308b811a"
+          },
+          {
+            "name": "Nightskiing Availability Ratio",
+            "expression": [
+              "",
+              " DIVIDE(",
+              "     CALCULATE(",
+              "         COUNTROWS(resorts),resorts[Nightskiing] = \"Yes\"),",
+              "         COUNTROWS(resorts)",
+              " )"
+            ],
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "a6e8c64b-b290-4cf5-8c32-b465b0db7bc2"
+          },
+          {
+            "name": "Summer Skiing Availability Ratio",
+            "expression": [
+              "",
+              "DIVIDE(",
+              "    CALCULATE(",
+              "        COUNTROWS(resorts),resorts[Summer skiing] = \"Yes\"),",
+              "        COUNTROWS(resorts)",
+              ")"
+            ],
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "26466225-be64-4d60-9c54-b9e2bbddadbb"
+          },
+          {
+            "name": "Average Price per Season",
+            "expression": [
+              "",
+              "AVERAGEX(VALUES(resorts[Season]),SUM(resorts[Price]))"
+            ],
+            "formatString": "\\$#,0.00;(\\$#,0.00);\\$#,0.00",
+            "lineageTag": "b66b8688-8e87-4080-ab2c-8b4af947520b"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Measure-837602fb-498c-430d-8699-982e6a03b41a",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i44FAA==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"Column1\", type text}}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type\",{\"Column1\"})",
+                "in",
+                "    #\"Removed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
